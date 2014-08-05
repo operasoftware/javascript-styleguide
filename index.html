@@ -41,6 +41,17 @@
         <p>
           Code inside promises that fails will not throw to the console. This can lead to bugs going undetected, so always add a rejection handler.
         </p>
+
+        <p>
+          In most cases, something like
+          <pre>
+          myPromise().
+          then(doSomething).
+          catch(function(e) {
+            throw e;
+          });
+        </pre>
+          will do.
       </section>
 
       <footer>
