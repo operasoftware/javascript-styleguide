@@ -162,16 +162,6 @@ section {
   padding-bottom: 50px;
 }
 
-.summary,
-.summary code {
-  color: hsl(0, 80%, 50%);
-}
-
-.summary {
-  display: block;
-  margin-top: 5px;
-}
-
 small {
   font-size: 11px;
 }
