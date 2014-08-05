@@ -27,21 +27,21 @@
 
       <section>
         <h4>
-          Use strict comparision
+          Use <span class="highlight">strict</span> comparision
         </h4>
         <p>
-          Type–converting comparison can have suprising results. You are encouraged to avoid using them and use strict comparision instead
+          Type–converting comparison (like ==) can have suprising results. You are encouraged to avoid using them and use strict comparision (like <code><span class="highlight">===</span></code> and <code><span class="highlight code">!==</span></code>) instead.
         </p>
 
         <h4>
-          Promises: Always use a rejection handler
+          <span class="highlight">Promises</span>: Always use a rejection handler
         </h4>
         <p>
           Code inside promises that fails will not throw to the console. This can lead to bugs going undetected, so always add a rejection handler.
         </p>
 
         <p>
-          In most cases, something like <code>myPromise().then(doSomething).catch(function(e) { throw e; });</code>
+          In most cases, something like <code>myPromise().then(doSomething).<span class="highlight">catch(function(e) { throw e; })</span>;</code>
           will do.
       </section>
 
