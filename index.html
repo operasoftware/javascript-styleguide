@@ -39,7 +39,6 @@
         <p>
           Code inside promises that fails will not throw to the console. This can lead to bugs going undetected, so always add a rejection handler.
         </p>
-
         <p>
           <code>myPromise().then(doSomething).<span class="highlight">catch(function(e) { throw e; })</span>;</code>
         </p>
@@ -50,14 +49,29 @@
         <p>
           Not using curly braces to mark blocks can lead to subtle erros and introduces a new style (which readers will have to parse)
         </p>
-
         <p>
           <code>
-            if (bla) {
-              foo();
-            } else {
-              fooToo();
-            }
+          if (bla) {
+            foo();
+          } else {
+            fooToo();
+          }
+          </code>
+        </p>
+
+        <h4>
+          Prefer quotes in object literals
+        </h4>
+        <p>
+          Keywords or special characters require you to use quotes sometimes, so make code easier to read and to avoid errors prefer to always use quotes
+        </p>
+        <p>
+          <code>
+          var obj = {
+            "foo": bar,
+            "fooToo": "string",
+            "js is great": true
+          }
           </code>
         </p>
       </section>
