@@ -52,13 +52,13 @@
           Not using curly braces to mark blocks can lead to subtle erros and introduces a new style (which readers will have to parse)
         </p>
         <p>
-          <code>
-          if (bla) {
-            foo();
-          } else {
-            fooToo();
-          }
-          </code>
+          <pre><code>
+if (bla) <span class="highlight">{</span>
+  foo();
+<span class="highlight">}</span> else <span class="highlight">{</span>
+  fooToo();
+<span class="highlight">}</span>
+          </code></pre>
         </p>
 
         <h4>
@@ -68,13 +68,13 @@
           Keywords or special characters require you to use quotes sometimes, so make code easier to read and to avoid errors prefer to always use single quotes like other strings.
         </p>
         <p>
-          <code>
-          var obj = {
-            'foo': bar,
-            'fooToo': 'string',
-            'js is great': true
-          }
-          </code>
+          <pre><code>
+var obj = {
+  <span class="highlight">'</span>foo<span class="highlight">'</span>: bar,
+  <span class="highlight">'</span>fooToo<span class="highlight">'</span>: <span class="highlight">'</span>string<span class="highlight">'</span>,
+  <span class="highlight">'</span>js is great<span class="highlight">'</span>: true
+}
+          </code></pre>
         </p>
       </section>
 
