@@ -41,8 +41,25 @@
         </p>
 
         <p>
-          In most cases, something like <code>myPromise().then(doSomething).<span class="highlight">catch(function(e) { throw e; })</span>;</code>
-          will do.
+          <code>myPromise().then(doSomething).<span class="highlight">catch(function(e) { throw e; })</span>;</code>
+        </p>
+
+        <h4>
+          Prefer curly braces
+        </h4>
+        <p>
+          Not using curly braces to mark blocks can lead to subtle erros and introduces a new style (which readers will have to parse)
+        </p>
+
+        <p>
+          <code>
+            if (bla) {
+              foo();
+            } else {
+              fooToo();
+            }
+          </code>
+        </p>
       </section>
 
       <footer>
